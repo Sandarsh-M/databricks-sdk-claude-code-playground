@@ -1,4 +1,5 @@
 # Databricks SDK + Claude Code Playground 
+> Built and documented with hands-on Claude Code workflows. 
 
 A hands-on project demonstrating the capabilities of the **Databricks Python SDK** through practical examples, reusable SDK wrapper modules, end-to-end automation workflows, and basic unit testing.
 
