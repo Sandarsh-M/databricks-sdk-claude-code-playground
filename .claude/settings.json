@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__notion__notion-ai-search"
+    ],
+    "deny": [
+      "mcp__notion__notion-create-pages"
+    ]
+  }
+}

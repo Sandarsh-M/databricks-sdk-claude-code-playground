@@ -1,4 +1,4 @@
-# Databricks Python SDK Playground
+# Databricks SDK + Claude Code Playground 
 
 A hands-on project demonstrating the capabilities of the **Databricks Python SDK** through practical examples, reusable SDK wrapper modules, end-to-end automation workflows, and basic unit testing.
 
@@ -259,3 +259,29 @@ Potential improvements include:
 This repository demonstrates practical usage of the Databricks Python SDK through incremental examples, reusable wrapper modules, automation workflows, and unit tests.
 
 The implementation follows a modular project structure and establishes a lightweight SDK scaffold that can be extended to support more advanced Databricks automation and Data Engineering use cases.
+
+---
+
+# AI-Assisted Development Workflow
+
+This repository is configured to work with **Claude Code**, with project-specific context, guardrails, and reusable commands rather than relying on default, generic behavior.
+
+## Project Memory (`CLAUDE.md`)
+
+Two `CLAUDE.md` files give Claude Code persistent context about this project:
+
+- **Root `CLAUDE.md`** — documents the stack, module conventions, the exact test command, naming patterns, and explicit "never touch without confirmation" rules (notably: `use_cases/` scripts and the test suite itself both make real calls against a live Databricks workspace).
+- **`src/databricks_sdk_playground/CLAUDE.md`** — a directory-level override demonstrating that more specific, closer-to-the-code instructions take precedence over the root file when they conflict.
+
+## Custom Commands
+
+Two reusable slash commands live in `.claude/commands/`:
+
+| Command | Purpose |
+|---------|---------|
+| `/safe-test-check` | Runs test *collection* only (`pytest --collect-only`), never the live suite, and explicitly reminds that the full suite hits a real Databricks workspace |
+| `/review-changes` | Reviews uncommitted changes against this repo's conventions - checks for missing test updates, misplaced business logic in `examples/`, and any risky edits under `use_cases/` |
+
+## Scoped Tool Access
+
+External tool access (MCP) is explicitly scoped in `.claude/settings.json` rather than left at default breadth - only read-only search is allowed, with write/create operations explicitly denied, since this project has no legitimate need for them.

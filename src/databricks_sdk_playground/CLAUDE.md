@@ -1,0 +1,1 @@
+This module is an exception to the root convention - use double quotes for all string literals here, not single quotes.
