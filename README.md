@@ -286,3 +286,5 @@ Two reusable slash commands live in `.claude/commands/`:
 ## Scoped Tool Access
 
 External tool access (MCP) is explicitly scoped in `.claude/settings.json` rather than left at default breadth - only read-only search is allowed, with write/create operations explicitly denied, since this project has no legitimate need for them.
+
+## Author Built by [Sandarsh M](https://github.com/Sandarsh-M) 
