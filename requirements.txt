@@ -1,2 +1,3 @@
+# Core dependencies for running tests and SDK examples
 databricks-sdk
 pytest
