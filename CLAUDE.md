@@ -9,6 +9,7 @@
 - Unity Catalog, Workspace APIs, Jobs APIs
 - pytest for testing
 - Developed in VS Code
+- Repository hosted on GitHub (personal account) 
 
 ## Conventions
 - `src` layout: all real code lives under `src/databricks_sdk_playground/`
