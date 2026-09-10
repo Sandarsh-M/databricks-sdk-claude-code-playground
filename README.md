@@ -252,6 +252,7 @@ Potential improvements include:
 - Unity Catalog privilege management
 - Secrets management
 - Databricks Asset Bundle integration
+- Add pre-commit hooks for linting and formatting
 
 ---
 
