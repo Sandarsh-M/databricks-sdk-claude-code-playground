@@ -9,7 +9,7 @@
 - Unity Catalog, Workspace APIs, Jobs APIs
 - pytest for testing
 - Developed in VS Code
-- Repository hosted on GitHub (personal account) 
+
 
 ## Conventions
 - `src` layout: all real code lives under `src/databricks_sdk_playground/`
@@ -60,3 +60,4 @@ PYTHONPATH=src pytest
   `tests/` with the same name prefixed `test_` (client.py -> test_client.py)
 - `examples/` and `docs/` share the same numeric prefix scheme
   (01_connect.py <-> 01_Getting_Started.md) - keep these in sync if you add a new one
+- Branch names should be lowercase-with-hyphens (e.g. feature/add-logging) 
